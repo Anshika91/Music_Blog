@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="music">
+            <img src="alan img.png" alt="">
+            <div class="info">
+                <h4>
+                    <center>On my way-alan walker,feat.sabrina carpenter</center>
+                    </cente>
+                </h4>
+                <p>
+                    <h5>
+                        <center>Album - on my way</center>
+                    </h5>
+                </p>
+                <center>
+                    <h3>Anshika</h3>
+                </center>
+                <br><br>
+                <center>
+                    <audio controls>
+                    <source src="Alan-walker-On-my-way (1).mp3" type="audio/mp3">
+                    </audio>
+                </center>
+
+                <div id="waveform"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'grey',
+            progressColor: 'brown',
+            barWidth: 4,
+            height: 90,
+            responsive: true,
+            hidescrollbar: true,
+            barRadius: 4
+        });
+        wavesurfer.load('Alan-walker-On-my-way (1).mp3');
+    </script>
+
+
+</body>
+
+</html>
